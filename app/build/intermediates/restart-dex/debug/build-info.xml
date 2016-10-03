@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="21"
+    density="xxhdpi"
+    format="7"
+    timestamp="3386101101236"
+    token="-6016278843950986149" >
+
+    <task
+        name="javac"
+        duration="2972" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="217" />
+    <task
+        name="verifier"
+        duration="117" />
+
+    <artifact
+        location="C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+        type="DEX" />
+
+    <build timestamp="605940679337" >
+        <artifact
+            location="C:\Users\ThiNha\Downloads\ToDo\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="3386101101236" >
+        <artifact
+            location="C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

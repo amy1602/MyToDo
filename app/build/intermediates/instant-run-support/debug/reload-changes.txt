@@ -1,0 +1,6 @@
+CHANGED,C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\thinha\todo\MainActivity$3$override.class
+CHANGED,C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\thinha\todo\MainActivity$3$1$override.class
+CHANGED,C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\thinha\todo\MainActivity$1$override.class
+CHANGED,C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\thinha\todo\MainActivity$2$override.class
+CHANGED,C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\thinha\todo\MainActivity$override.class
