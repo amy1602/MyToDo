@@ -4,41 +4,27 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="3386101101236"
-    token="-6016278843950986149" >
+    timestamp="3235113926381"
+    token="-3156780657010674092" >
 
     <task
         name="javac"
-        duration="2972" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="217" />
+        duration="0" />
     <task
         name="verifier"
-        duration="117" />
+        duration="0" />
 
-    <artifact
-        location="C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-        type="DEX" />
-
-    <build timestamp="605940679337" >
+    <build timestamp="2637365132063" >
         <artifact
-            location="C:\Users\ThiNha\Downloads\ToDo\app\build\outputs\apk\app-debug.apk"
+            location="D:\Android\ToDo\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="3386101101236" >
-        <artifact
-            location="C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\ThiNha\Downloads\ToDo\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-            type="DEX" />
-    </build>
+    <build timestamp="3235113926381" />
 
 </instant-run>
