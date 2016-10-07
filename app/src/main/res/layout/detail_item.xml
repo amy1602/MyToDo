@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_gravity="center"
+    android:layout_height="300dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:text="Detail information"
+        android:textSize="22dp"
+        android:id="@+id/lable"
+        android:textColor="#AA00FF"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearContent"
+        android:layout_below="@+id/lable"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="6dp"
+        >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="Content:"
+        android:textSize="15dp"
+        android:textColor="#1565C0"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="16dp"
+            android:textColor="#FF4081"
+            android:id="@+id/detailContent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearTime"
+        android:layout_below="@+id/linearContent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Time: "
+            android:textSize="15dp"
+            android:textColor="#1565C0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="16dp"
+            android:textColor="#FF4081"
+            android:id="@+id/detailTime"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearDate"
+        android:layout_below="@+id/linearTime"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Date: "
+            android:textSize="15dp"
+            android:textColor="#1565C0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="16dp"
+            android:textColor="#FF4081"
+            android:id="@+id/detailDate"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="EDIT"
+        android:id="@+id/buttonEdit"
+        android:textColor="#673AB7"
+        android:textSize="16dp"
+        />
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="DELETE"
+        android:id="@+id/buttonDelete"
+        android:textColor="#673AB7"
+        android:textSize="16dp"
+        />
+    </LinearLayout>
+</RelativeLayout>

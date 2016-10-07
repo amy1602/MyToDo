@@ -60,7 +60,7 @@ public class EditItemActivity extends AppCompatActivity {
         Month.setMaxValue(12);
 
         Year.setMinValue(1990);
-        Year.setMaxValue(2000);
+        Year.setMaxValue(2020);
 
         Hour.setMinValue(0);
         Hour.setMaxValue(23);
@@ -76,12 +76,10 @@ public class EditItemActivity extends AppCompatActivity {
         checkbtn = intent.getIntExtra("checkBtn", 1);
 
         if (checkbtn == 0) {
-            Save.setText("EDIT");
+            Save.setText("SAVE");
 
-            setEnableContent(false);
         } else {
             Save.setText("ADD");
-
         }
 
         if (itemIndex >= 0) {
@@ -144,31 +142,13 @@ public class EditItemActivity extends AppCompatActivity {
 
 
 
-
-    public void setEnableContent(boolean check)
-    {
-        editText.setEnabled(check);
-
-        Date.setEnabled(check);
-
-        Month.setEnabled(check);
-
-        Year.setEnabled(check);
-
-        Hour.setEnabled(check);
-
-        Minute.setEnabled(check);
-
-        Second.setEnabled(check);
-    }
-
     public void done(View view)
     {
         //checkbtn = 1: add
         //checkbtn = 2: save
         //checkbtn = 0: edit
 
-        if (checkbtn==2 )        {
+        if (checkbtn==2 ||checkbtn==0 )        {
 
             if (editText.getText().toString().equals(""))
             {
@@ -248,13 +228,6 @@ public class EditItemActivity extends AppCompatActivity {
                 checkbtn=0;
                 this.finish();
             }
-        }
-        else if (checkbtn==0)
-        {
-            setEnableContent(true);
-
-            Save.setText("SAVE");
-            checkbtn=2;
         }
 
     }

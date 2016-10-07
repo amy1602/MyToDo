@@ -20,13 +20,18 @@
          android:layout_height="wrap_content"
          android:layout_weight="1"
          android:text="content:"
-         android:textSize="20dp"/>
+         android:textSize="18dp"
+         android:textColor="#1565C0"/>
 
     <EditText
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="3"
-        android:id="@+id/edit"/>
+        android:id="@+id/edit"
+        android:textColor="#FF4081"
+        android:textSize="22dp"
+
+        />
 
     </LinearLayout>
 
@@ -37,6 +42,7 @@
         android:id="@+id/time"
         android:layout_below="@+id/content"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
         >
         <TextView
             android:layout_width="0dp"
@@ -44,7 +50,8 @@
             android:layout_weight="2"
             android:layout_marginTop="70dp"
             android:text="Time:"
-            android:textSize="20dp"/>
+            android:textSize="18dp"
+            android:textColor="#1565C0"/>
 
 
 
@@ -53,29 +60,33 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/hour"></NumberPicker>
+            android:id="@+id/hour"
+            android:textColor="#1DE9B6"
+            ></NumberPicker>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:layout_marginTop="70dp"
             android:layout_marginLeft="30dp"
             android:text=" : "
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
 
         <NumberPicker
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/minute"></NumberPicker>
+            android:id="@+id/minute"
+            android:textColor="#1DE9B6"
+            ></NumberPicker>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
             android:layout_marginLeft="30dp"
-            android:layout_weight="2"
-            android:textSize="40dp"
+            android:layout_weight="1"
+            android:textSize="30dp"
             android:text=" : "/>
 
 
@@ -84,7 +95,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/second"></NumberPicker>
+            android:id="@+id/second"
+            android:textColor="#1DE9B6"
+            ></NumberPicker>
 
     </LinearLayout>
 
@@ -94,6 +107,7 @@
         android:orientation="horizontal"
         android:layout_below="@+id/time"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
         >
         <TextView
             android:layout_width="0dp"
@@ -101,7 +115,8 @@
             android:layout_weight="2"
             android:layout_marginTop="70dp"
             android:text="Date:"
-            android:textSize="20dp"/>
+            android:textSize="18dp"
+            android:textColor="#1565C0"/>
 
 
 
@@ -110,29 +125,31 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/date"></NumberPicker>
+            android:id="@+id/date"
+            android:textColor="#1DE9B6"></NumberPicker>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:layout_marginTop="70dp"
             android:layout_marginLeft="30dp"
             android:text=" / "
-            android:textSize="40dp"/>
+            android:textSize="30dp"/>
 
         <NumberPicker
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/month"></NumberPicker>
+            android:id="@+id/month"
+            android:textColor="#1DE9B6"></NumberPicker>
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
             android:layout_marginLeft="30dp"
-            android:layout_weight="2"
-            android:textSize="40dp"
+            android:layout_weight="1"
+            android:textSize="30dp"
             android:text=" / "/>
 
 
@@ -141,26 +158,32 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/year"></NumberPicker>
+            android:id="@+id/year"
+            android:textColor="#1DE9B6"></NumberPicker>
 
     </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:text="EDIT"
+        android:text="SAVE"
         android:onClick="done"
         android:layout_alignParentBottom="true"
         android:id="@+id/save"
+        android:textColor="#673AB7"
+        android:textSize="16dp"
         />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:text="DELETE"
+        android:textSize="16dp"
         android:id="@+id/delete"
         android:onClick="Delete"
+        android:textColor="#673AB7"
         />
 
 

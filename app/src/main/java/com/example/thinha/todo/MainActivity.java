@@ -1,5 +1,7 @@
 package com.example.thinha.todo;
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,11 +15,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -35,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn;
     static DBHelper mydb ;
     static SQLiteDatabase mySQL;
-
+    static ViewDialog viewdialog;
     static ArrayList<Integer> arrayItemID = new ArrayList<Integer>();
     static ArrayList<String> arrayDate = new ArrayList<String>();
     static ArrayList<String> arrayMonth = new ArrayList<String>();
@@ -56,17 +60,13 @@ public class MainActivity extends AppCompatActivity {
         list = (ListView) findViewById(R.id.list);
         btn=(Button)findViewById(R.id.btnAdd);
 
-
         mydb = new DBHelper(this);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                Intent intent = new Intent(getApplicationContext(), EditItemActivity.class);
-                intent.putExtra("ItemID",i);
-                intent.putExtra("checkBtn",0);
-                startActivity(intent);
+                viewdialog = new ViewDialog(i);
+                viewdialog.showDialog(MainActivity.this);
             }
         });
 
@@ -80,8 +80,6 @@ public class MainActivity extends AppCompatActivity {
 
         mydb.parseData(mydb.getData());
         arrayAdapter.notifyDataSetChanged();
-
-        Toast.makeText(getBaseContext(),"id = "+id,Toast.LENGTH_SHORT).show();
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,9 +109,19 @@ public class MainActivity extends AppCompatActivity {
 
                             public void onClick(DialogInterface dialog, int which) {
 
-                                MainActivity.nameArrayList.remove(positon);
+                                MainActivity.arrayHour.remove(positon);
+                                MainActivity.arrayMinute.remove(positon);
+                                MainActivity.arraySecond.remove(positon);
+                                MainActivity.arrayDate.remove(positon);
+                                MainActivity.arrayMonth.remove(positon);
+                                MainActivity.arrayYear.remove(positon);
 
+                                MainActivity.nameArrayList.remove(positon);
                                 MainActivity.arrayAdapter.notifyDataSetChanged();
+
+                                MainActivity.mydb.deleteContact(MainActivity.arrayItemID.get(positon));
+                                MainActivity.arrayItemID.remove(positon);
+                                MainActivity.id--;
 
                             }
 
@@ -150,4 +158,7 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     }
+
+
 }
+
