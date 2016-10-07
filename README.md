@@ -21,7 +21,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [X] Persist the todo items [into SQLite] instead of a text file.
-* [X] Improve style of the todo items in the list. 
+* [X] Improve style of the todo items in the list with Floating Action Button and NumberPicker. 
 * [X] Add support for completion due dates for todo items (and display within listview item).
 * [X] Use a Dialog instead of new activity for detail information.
 * [X] Add support for selecting the priority of each todo item (and display in listview item)
@@ -42,7 +42,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 * [X] How to save, update and load data.
-* [X] How to organize program suitable
+* [X] How to organize program suitably
 
 ## License
 
